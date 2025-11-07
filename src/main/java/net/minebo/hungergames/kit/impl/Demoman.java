@@ -17,8 +17,6 @@ import org.bukkit.inventory.ItemStack;
 
 public class Demoman extends Kit {
 
-    public Demoman() { register(); }
-
     @Override
     public KitType getKitType() { return KitType.DEMOMAN; }
 

@@ -16,10 +16,6 @@ import java.util.List;
 
 public class Archer extends Kit {
 
-    public Archer() {
-        register();
-    }
-
     @Override
     public KitType getKitType() {
         return KitType.ARCHER;

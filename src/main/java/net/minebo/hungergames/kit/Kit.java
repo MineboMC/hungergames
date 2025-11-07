@@ -1,10 +1,12 @@
 package net.minebo.hungergames.kit;
 
 import net.minebo.hungergames.HungerGames;
-import net.minebo.hungergames.kit.impl.Grandpa;
 import net.minebo.hungergames.statistics.HGProfile;
+import net.minebo.hungergames.kit.impl.*;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.block.data.type.Switch;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
@@ -35,7 +37,23 @@ public abstract class Kit implements Listener {
     }
 
     public static void registerKits() {
+        new Archer().register();
+        new Cannibal().register();
+        new Demoman().register();
+        new Doctor().register();
+        new Endermage().register();
+        new Fisherman().register();
         new Grandpa().register();
+        new Kangaroo().register();
+        new Miner().register();
+        new Phantom().register();
+        new Snail().register();
+        new Stomper().register();
+        new Switcher().register();
+        new Tank().register();
+        new Thor().register();
+        new Timelord().register();
+        new Viper().register();
     }
 
 }

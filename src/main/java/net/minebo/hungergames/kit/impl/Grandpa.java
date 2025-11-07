@@ -13,27 +13,21 @@ import java.util.List;
 public class Grandpa extends Kit {
 
     @Override
-    public KitType getKitType() {
-        return KitType.GRANDPA;
-    }
+    public KitType getKitType() { return KitType.GRANDPA; }
 
     @Override
-    public Material getIcon() {
-        return Material.RED_BED;
-    }
+    public Material getIcon() { return Material.RED_BED; }
 
     @Override
-    public String getName() {
-        return "Grandpa";
-    }
+    public String getName() { return "Grandpa"; }
 
     @Override
-    public String getDescription() {
-        return "Start with a knockback 2 wooden stick.";
-    }
+    public String getDescription() { return "Start with a knockback 2 wooden stick."; }
 
     @Override
     public List<ItemStack> getDefaultItems() {
         return List.of(new ItemBuilder(Material.STICK).addEnchantment(Enchantment.KNOCKBACK, 2).setName(ChatColor.GOLD + "Walking Cane").build());
     }
+
+    // Grandpa is item-based; knockback stick handles the effect
 }
