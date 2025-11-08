@@ -3,7 +3,6 @@ package net.minebo.hungergames.kit.impl;
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.HungerGames;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import net.minebo.hungergames.kit.data.PortalInfo;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -25,9 +24,6 @@ public class Endermage extends Kit {
 
     // active portal per-player
     private final Map<UUID, PortalInfo> activePortals = new HashMap<>();
-
-    @Override
-    public KitType getKitType() { return KitType.ENDERMAGE; }
 
     @Override
     public Material getIcon() { return Material.ENDER_PEARL; }

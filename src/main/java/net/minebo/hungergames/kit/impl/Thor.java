@@ -4,7 +4,6 @@ import net.minebo.cobalt.cooldown.construct.Cooldown;
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.HungerGames;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
@@ -35,9 +34,6 @@ public class Thor extends Kit {
         HungerGames.getInstance().getCooldownHandler().registerCooldown("Thor", cooldown);
         register();
     }
-
-    @Override
-    public KitType getKitType() { return KitType.THOR; }
 
     @Override
     public Material getIcon() { return Material.GOLDEN_AXE; }

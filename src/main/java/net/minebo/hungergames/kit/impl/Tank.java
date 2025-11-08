@@ -2,7 +2,6 @@ package net.minebo.hungergames.kit.impl;
 
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -14,9 +13,6 @@ import org.bukkit.util.Vector;
 import java.util.List;
 
 public class Tank extends Kit {
-
-    @Override
-    public KitType getKitType() { return KitType.TANK; }
 
     @Override
     public Material getIcon() { return Material.SHIELD; }

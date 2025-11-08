@@ -4,7 +4,6 @@ import net.minebo.cobalt.cooldown.construct.Cooldown;
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.HungerGames;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -39,9 +38,6 @@ public class Phantom extends Kit {
         HungerGames.getInstance().getCooldownHandler().registerCooldown("Phantom", cooldown);
         register();
     }
-
-    @Override
-    public KitType getKitType() { return KitType.PHANTOM; }
 
     @Override
     public Material getIcon() { return Material.FEATHER; }

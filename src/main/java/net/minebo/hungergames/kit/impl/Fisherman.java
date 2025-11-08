@@ -4,7 +4,6 @@ import net.minebo.cobalt.cooldown.construct.Cooldown;
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.HungerGames;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -23,9 +22,6 @@ public class Fisherman extends Kit {
     public Fisherman() {
         HungerGames.getInstance().getCooldownHandler().registerCooldown("Fisherman", cooldown);
     }
-
-    @Override
-    public KitType getKitType() { return KitType.FISHERMAN; }
 
     @Override
     public Material getIcon() { return Material.FISHING_ROD; }

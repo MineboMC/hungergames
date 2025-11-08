@@ -2,7 +2,6 @@ package net.minebo.hungergames.kit.impl;
 
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -14,9 +13,6 @@ import org.bukkit.Location;
 import java.util.List;
 
 public class Switcher extends Kit {
-
-    @Override
-    public KitType getKitType() { return KitType.SWITCHER; }
 
     @Override
     public Material getIcon() { return Material.SPECTRAL_ARROW; }

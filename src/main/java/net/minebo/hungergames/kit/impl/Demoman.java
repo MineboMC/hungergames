@@ -1,7 +1,6 @@
 package net.minebo.hungergames.kit.impl;
 
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -16,9 +15,6 @@ import java.util.List;
 import org.bukkit.inventory.ItemStack;
 
 public class Demoman extends Kit {
-
-    @Override
-    public KitType getKitType() { return KitType.DEMOMAN; }
 
     @Override
     public Material getIcon() { return Material.TNT; }

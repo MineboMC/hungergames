@@ -3,7 +3,6 @@ package net.minebo.hungergames.kit.impl;
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.HungerGames;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -21,9 +20,6 @@ import java.util.UUID;
 public class Kangaroo extends Kit {
 
     private final Set<UUID> canJump = new HashSet<>();
-
-    @Override
-    public KitType getKitType() { return KitType.KANGAROO; }
 
     @Override
     public Material getIcon() { return Material.RABBIT_FOOT; }

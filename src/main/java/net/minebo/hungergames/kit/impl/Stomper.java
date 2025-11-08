@@ -3,7 +3,6 @@ package net.minebo.hungergames.kit.impl;
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.HungerGames;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -16,9 +15,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 import java.util.List;
 
 public class Stomper extends Kit {
-
-    @Override
-    public KitType getKitType() { return KitType.STOMPER; }
 
     @Override
     public Material getIcon() { return Material.IRON_BOOTS; }

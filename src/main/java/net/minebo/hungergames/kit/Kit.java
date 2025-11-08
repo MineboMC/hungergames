@@ -11,14 +11,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public abstract class Kit implements Listener {
 
-    public static HashMap<KitType, Kit> kits = new HashMap<>();
-
-    public abstract KitType getKitType();
+    public static List<Kit> kits = new ArrayList<>();
 
     public abstract Material getIcon();
     public abstract String getName();
@@ -31,8 +30,10 @@ public abstract class Kit implements Listener {
         return HGProfile.get(player).getSelectedKit().equals(this);
     }
 
+    public Kit get(String kitName) { return kits.stream().filter(n -> n.getName().equalsIgnoreCase(kitName)).findFirst().orElse(null); }
+
     public void register() {
-        Kit.kits.put(this.getKitType(), this);
+        Kit.kits.add(this);
         Bukkit.getPluginManager().registerEvents(this, HungerGames.getInstance());
     }
 

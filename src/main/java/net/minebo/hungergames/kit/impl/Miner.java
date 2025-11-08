@@ -2,7 +2,6 @@ package net.minebo.hungergames.kit.impl;
 
 import net.minebo.cobalt.util.ItemBuilder;
 import net.minebo.hungergames.kit.Kit;
-import net.minebo.hungergames.kit.KitType;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -17,9 +16,6 @@ import java.util.Random;
 public class Miner extends Kit {
 
     private final Random random = new Random();
-
-    @Override
-    public KitType getKitType() { return KitType.MINER; }
 
     @Override
     public Material getIcon() { return Material.IRON_PICKAXE; }
