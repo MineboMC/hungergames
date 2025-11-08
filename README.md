@@ -29,4 +29,4 @@ Once these tasks have been taken care of, compilation via `mvn clean install` wi
 
 # License
 This software is available under the following licenses:
-* GNU General Public License (GPL) version 3
+* MIT License
